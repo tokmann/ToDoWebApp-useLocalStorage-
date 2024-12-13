@@ -1,0 +1,260 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: linear-gradient(130deg, #9c54c3, #bf96d5, #a281f5, #523463);
+  background-size: 400% 400%;
+  -webkit-animation: Animation 5s ease infinite;
+  -moz-animation: Animation 5s ease infinite;
+  animation: Animation 5s ease infinite;
+}
+
+@keyframes Animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.main_window {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 18px 12px rgba(34, 60, 80, 0.36);
+  align-self: center;
+  justify-self: center;
+  margin-top: 11rem;
+  min-width: 270px;
+}
+
+.text {
+  font-size: 30px;
+  font-weight: 650;
+  margin: 10px;
+  margin-top: 17px;
+  align-self: center;
+}
+
+.submit {
+  font-size: 20px;
+  font-weight: 550;
+  color: whitesmoke;
+  background-color: #a281f5;
+  margin: 20px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #8970c8;
+  transition: 0.1s;
+}
+
+.submit:active {
+  background-color: #523463;
+  transition: 0.1s;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #d9b5ec;
+  margin-bottom: 1rem;
+  justify-self: center;
+}
+
+.input::placeholder {
+  font-size: 15px;
+  font-weight: 550;
+  color: rgb(181, 179, 179);
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 1px 1px 18px 2px rgba(34, 60, 80, 0.36);
+  transition: 0.1s;
+}
+
+.back_button {
+  margin-top: 10px;
+  margin-left: 10px;
+  min-width: 60px;
+  min-height: 60px;
+  padding-top: 6px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 18px 12px rgba(34, 60, 80, 0.36);
+  cursor: pointer;
+}
+
+.back_button:hover {
+  background-color: rgb(217, 215, 215);
+  transition: 0.1s;
+}
+
+.back_button:active {
+  background-color: rgb(138, 138, 138);
+  transition: 0.1s;
+}
+
+.av_input {
+  display: none;
+}
+
+.av_upload {
+  border-radius: 10px;
+  border: 3px solid rgb(156, 123, 190);
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.av_upload:hover {
+  border: 3px dashed rgb(156, 123, 190);
+  transition: 0.2s;
+}
+
+.av_upload:active {
+  background-color: #9680ce;
+  transition: 0.2s;
+}
+
+.display_sign_up {
+  display: none;
+  flex-direction: column;
+}
+
+.display_log_in {
+  display: none;
+  flex-direction: column;
+}
+
+.display_choose {
+  display: flex;
+  flex-direction: column;
+}
+
+.choose_button {
+  margin: 30px;
+  min-width: 90px;
+  min-height: 40px;
+  border-radius: 10px;
+  border: 3px solid #beaceb;
+  background-color: #beaceb;
+  color: whitesmoke;
+  font-size: 24px;
+  font-weight: 550;
+  box-shadow: 1px 1px 18px 2px rgba(68, 89, 105, 0.36);
+}
+
+.choose_button:hover {
+  border: 3px dashed rgb(156, 123, 190);
+  transition: 0.2s;
+}
+
+.choose_button:active {
+  background-color: #9680ce;
+  transition: 0.2s;
+}
+
+.password_sign_up {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #d9b5ec;
+}
+
+.password_sign_up::placeholder {
+  font-size: 15px;
+  font-weight: 550;
+  color: rgb(181, 179, 179);
+}
+
+.password_sign_up:focus {
+  outline: none;
+  box-shadow: 1px 1px 18px 2px rgba(34, 60, 80, 0.36);
+  transition: 0.1s;
+}
+
+.back_button_sign_up {
+  width: 30px;
+  height: 30px;
+  left: 7px;
+  margin-top: 7px;
+  padding: 0 0 0 0;
+  border-radius: 10px;
+  border: none;
+}
+
+.back_button_log_in {
+  width: 30px;
+  height: 30px;
+  left: 7px;
+  margin-top: 7px;
+  padding: 0 0 0 0;
+  border-radius: 10px;
+  border: none;
+}
+
+.back_log_in {
+  width: 250px;
+}
+
+.name_input {
+  display: grid;
+}
+
+.password_input {
+  display: grid;
+}
+
+.back_sign_up {
+  width: 250px;
+}
+
+.back_button_sign_up:hover {
+  box-shadow: 1px 1px 18px 1px rgba(34, 60, 80, 0.36);
+  transition: 0.3s;
+}
+
+.back_button_sign_up:active {
+  background-color: #bfb9c3;
+  transition: 0.3s;
+}
+
+.back_button_log_in:hover {
+  box-shadow: 1px 1px 18px 1px rgba(34, 60, 80, 0.36);
+  transition: 0.3s;
+}
+
+.back_button_log_in:active {
+  background-color: #bfb9c3;
+  transition: 0.3s;
+}

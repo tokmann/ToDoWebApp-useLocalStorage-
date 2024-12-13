@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="./register.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="back">
+        <button class="back_button" onclick="location.href='index.html'">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M21 8H11V5a1 1 0 0 0-1.707-.707l-7 7a1 1 0 0 0 0 1.414l7 7A1 1 0 0 0 11 19v-3h10a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z"
+              style="fill: #5f456c"
+              data-name="Left"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="main_window">
+        <div class="display_choose">
+          <div class="text">To Do List</div>
+          <div>
+            <button class="choose_log_in choose_button" id="choose_log_in">Log in</button>
+            <button class="choose_sign_up choose_button" id="choose_sign_up">Sign up</button>
+          </div>
+        </div>
+        <div class="display_log_in">
+          <div class="back_log_in">
+            <button class="back_button_log_in">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M21 8H11V5a1 1 0 0 0-1.707-.707l-7 7a1 1 0 0 0 0 1.414l7 7A1 1 0 0 0 11 19v-3h10a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z"
+                  style="fill: #9977c7"
+                  data-name="Left"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="text">Hello again!</div>
+          <div class="name_input">
+            <input class="input" type="text" placeholder="Name" />
+          </div>
+          <div class="password_input">
+            <input class="input" type="password" placeholder="Password" />
+          </div>
+          <button class="submit" id="log_in">Log in</button>
+        </div>
+        <div class="display_sign_up">
+          <div class="back_sign_up">
+            <button class="back_button_sign_up">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M21 8H11V5a1 1 0 0 0-1.707-.707l-7 7a1 1 0 0 0 0 1.414l7 7A1 1 0 0 0 11 19v-3h10a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z"
+                  style="fill: #9977c7"
+                  data-name="Left"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="text">Hello!</div>
+          <div class="name_input">
+            <input class="input" type="text" placeholder="Name" />
+          </div>
+          <div class="password_input">
+            <input class="input" type="password" placeholder="Password" />
+          </div>
+          <label for="file_upload" class="av_upload">Choose picture</label>
+          <input
+            id="file_upload"
+            class="av_input"
+            type="file"
+            placeholder="Choose avatar!"
+            accept="image/png, image/gif, image/jpeg"
+          />
+          <button class="submit" id="sign_up">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="register.js"></script>
+</html>
